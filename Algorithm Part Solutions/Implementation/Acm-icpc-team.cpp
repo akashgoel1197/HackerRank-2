@@ -21,19 +21,20 @@ int main() { _cin;
          i=0;  
            
     while(i<n-1)
-        { j=i+1;
-        while(j<n)
+        { 
+            j=i+1;
+            while(j<n)
             { 
-             c=0;
-            for(ll k=0;k<m;k++)
+                 c=0;
+                for(ll k=0;k<m;k++)
                 {
-                if(v[i][k]!=v[j][k])
-                    {
+                    if(v[i][k]!=v[j][k])
+                       {
                     c++;
-                }
+                        }
                 else if(v[i][k]=='1'&&v[j][k]=='1') c++;
                 
-            }
+                }
             
              //cout<<c;
         if(max1<c) {
